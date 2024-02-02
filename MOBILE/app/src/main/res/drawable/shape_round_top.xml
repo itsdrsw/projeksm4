@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#20A5B2" /> <!-- Ganti warna sesuai kebutuhan -->
+    <corners android:topLeftRadius="20dp"
+        android:topRightRadius="20dp" />
+</shape>

@@ -1,0 +1,219 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:context=".ui.fragment.Profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/biru"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounded_bottom_nav"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Transaksi" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_riwayat_tran"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_1"
+                android:drawableStart="@drawable/baseline_restore_24"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/blackdikit"
+                android:fontFamily="@font/montserrat_medium"
+                android:paddingHorizontal="20dp"
+                android:text="Riwayat Transaksi"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/blackdikit"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="331dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/abu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Pengaturan" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ubah_pass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_1"
+                android:drawableStart="@drawable/outline_lock_24"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/blackdikit"
+                android:fontFamily="@font/montserrat_medium"
+                android:paddingHorizontal="20dp"
+                android:text="Ubah Password"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/blackdikit"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="331dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_set_akun"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_1"
+                android:drawableStart="@drawable/ic_outline_person_outline_24"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/blackdikit"
+                android:fontFamily="@font/montserrat_medium"
+                android:paddingHorizontal="20dp"
+                android:text="Pengaturan Akun"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/blackdikit"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="331dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_1"
+                android:drawableStart="@drawable/baseline_logout_24"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/blackdikit"
+                android:fontFamily="@font/montserrat_medium"
+                android:paddingHorizontal="20dp"
+                android:text="Keluar"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/blackdikit"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="331dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/abu" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_elips_profile"
+            android:backgroundTint="@color/biru"
+            app:layout_constraintBottom_toBottomOf="@+id/profileImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profileImage" />
+
+        <TextView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="R"
+            android:textColor="@color/blackdikit"
+            android:textAllCaps="true"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:background="@drawable/circle_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/namaLengkap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="Nama Lengkap"
+            android:textColor="@color/blackdikit"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="username"
+            android:textColor="@color/blackdikit"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namaLengkap" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="1dp"
+            android:background="@color/abu"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            tools:layout_editor_absoluteX="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
