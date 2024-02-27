@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::group(['namemspaace' => 'Frontend'], function() {
+    Route::resource('home', HomeController::class);
+});
+
+Route::group(['namemspaace' => 'Backend'], function() {
+    Route::resource('dashboard', DashboardController::class);
 });
